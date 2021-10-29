@@ -34,6 +34,7 @@ function Section() {
                         <Button>
                             Learn More
                         </Button>
+                        
                 </FirstCard>
                 <SecondCard>
                         <img src="./images/secondimg.jpeg"/>
@@ -42,6 +43,7 @@ function Section() {
                         <Button>
                         Learn More
                         </Button>
+                        
                 </SecondCard>
                 <ThirdCard>
                         <img src="./images/thirdcard.jpeg"/>
@@ -53,8 +55,33 @@ function Section() {
                 </ThirdCard>
             </Cards>
             <Footer>
-                    Copyright@Manushi
+            <a>
+                    <img src="./images/Salon De Beaute.png"/>
+            </a>
+            <Address>
+                <p>2nd Floor, 10011
+                    82 Ave, Montreal,
+                    QC H2J 156 <br/>
+                    (780) 429 4242</p>
+            </Address>
+            <Hours>
+            Hours: <br/>
+            Monday: Closed <br/>
+            Tuesday: 9am-7pm <br/>
+            Wednesday: 12pm-9pm <br/>
+            Thursday: 10am-7pm <br/>
+            Friday: 9am-6pm <br/>
+            Saturday: 10am-4pm <br/>
+            Sunday: Closed <br/>
+            </Hours>
+            <NewsLetter>
+                <p>JOIN OUR NEWSLETTER</p>
+                <p>Join up and get notified about new products, updates and special offers. You can unsubscribe at any time.</p>
+                <input type="text" id="email" name="Email" placeholder="Email"></input>
+            </NewsLetter>
+
             </Footer>
+            
             
         </Wrap>
     )
@@ -114,6 +141,10 @@ const Cards = styled.div`
 `
 
 const FirstCard = styled.div`
+width:50%;
+height: 40%;
+padding-bottom: 10px;
+
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 0 20px;
     
@@ -144,15 +175,50 @@ const ThirdCard = styled(FirstCard)`
 
 `
 
-const Footer = styled.div`
-        margin-top: 15%;
-        width: 100%;
-        height: 20%;
-        background-color: #954C4C;
-        display: flex;
-        color: white;
-        justify-content: center;
-        align-items: center;
+ const Footer = styled.div`
+ background-color: #954C4C;
+ 
+margin-top: 15%;
+width: 100%;
+height: 50%;
+display: flex;
+padding: 8px 16px;
+justify-content: space-evenly;
+align-items: center;
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
 
 `
+const Address = styled.div`
+    width: 15%;
+    p{
+        color: white;
+        
+    }
+    
+    
+    
+`
+const Hours = styled.div`
+    width: 20%;
+    color: white;
+   
+   
+`
+
+const NewsLetter = styled.div`
+    width: 20%;
+    p{
+        color: white;
+    }
+    line-height: 1.5;
+    
+    
+
+`
+
 

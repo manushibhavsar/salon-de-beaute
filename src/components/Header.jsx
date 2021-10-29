@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link, NavLink} from 'react-router-dom'
 
 function Header() {
     return (
@@ -10,12 +11,11 @@ function Header() {
                 </a>
                 <Menu>
                     <p><a href="#">Home</a></p>
-                    <p><a href="#">Staff</a></p>
+                    <p><a href="/Staff.jsx">Staff</a></p>
                     <p><a href="#">Services</a></p>
-                    <p><a href="#">Products</a></p>
                     <p><a href="#">Contact</a></p>
                     <p><a href="#">Journal</a></p>
-                    <p><a href="#">Policies</a></p>
+                    
                 </Menu>
         </Container>
     )
